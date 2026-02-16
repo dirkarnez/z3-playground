@@ -7,3 +7,4 @@
 
 ### Examples
 - [Z3 JavaScript | Online Z3 Guide](https://microsoft.github.io/z3guide/programming/Z3%20JavaScript%20Examples/#using-z3-objects-wrapped-in-javascript)
+  - [#integer-arithmetic](https://microsoft.github.io/z3guide/programming/Z3%20JavaScript%20Examples/#integer-arithmetic)
