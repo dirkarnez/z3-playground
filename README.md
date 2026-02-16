@@ -4,3 +4,6 @@
 
 ### Step-by-step tutorial
 - [Guess the Secret Formula | Online Z3 Guide](https://microsoft.github.io/z3guide/playground/Guess%20the%20Secret%20Formula/)
+
+### Examples
+- [Z3 JavaScript | Online Z3 Guide](https://microsoft.github.io/z3guide/programming/Z3%20JavaScript%20Examples/#using-z3-objects-wrapped-in-javascript)
