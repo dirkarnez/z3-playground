@@ -1,0 +1,22 @@
+{
+  "name": "z3-playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "rollup-plugin-polyfill-node": "^0.13.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-cross-origin-isolation": "^0.1.6",
+    "vite-plugin-static-copy": "^3.2.0",
+    "vite-plugin-top-level-await": "^1.6.0"
+  },
+  "dependencies": {
+    "z3-solver": "^4.16.0"
+  }
+}
