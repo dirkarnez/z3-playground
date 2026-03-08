@@ -4,6 +4,9 @@
 - [SMT-LIB The Satisfiability Modulo Theories Library](https://smt-lib.org/)
 - [Freeform Editing | Online Z3 Guide](https://microsoft.github.io/z3guide/playground/Freeform%20Editing/)
 
+### Notes
+- [Allow setting COOP and COEP headers in Github Pages · community · Discussion #13309](https://github.com/orgs/community/discussions/13309)
+
 ### C++
 - [dirkarnez/z3-prebuilt](https://github.com/dirkarnez/z3-prebuilt)
 
