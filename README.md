@@ -5,7 +5,10 @@
 - [Freeform Editing | Online Z3 Guide](https://microsoft.github.io/z3guide/playground/Freeform%20Editing/)
 
 ### Notes
-- [Allow setting COOP and COEP headers in Github Pages · community · Discussion #13309](https://github.com/orgs/community/discussions/13309)
+- Since z3 uses emscripten's threading, `crossOriginIsolated` should be allowed for z3 to leverage `SharedArrayBuffer`
+  - [Window: crossOriginIsolated property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/crossOriginIsolated)
+  - Using hack from [Allow setting COOP and COEP headers in Github Pages · community · Discussion #13309](https://github.com/orgs/community/discussions/13309)
+    - [gzuidhof/coi-serviceworker: Cross-origin isolation (COOP and COEP) through a service worker for situations in which you can't control the headers (e.g. GH pages) · GitHub](https://github.com/gzuidhof/coi-serviceworker)
 
 ### C++
 - [dirkarnez/z3-prebuilt](https://github.com/dirkarnez/z3-prebuilt)
