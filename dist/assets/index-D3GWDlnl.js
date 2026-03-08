@@ -20,7 +20,7 @@
       fetch(g.href, h);
     }
   })();
-  function Ls(p) {
+  function ds(p) {
     if (Object.prototype.hasOwnProperty.call(p, "__esModule")) return p;
     var f = p.default;
     if (typeof f == "function") {
@@ -46,18 +46,18 @@
       });
     }), e;
   }
-  var wt = {}, At = {}, se = {}, He = {}, je = function(p, f) {
-    return je = Object.setPrototypeOf || {
+  var wt = {}, At = {}, se = {}, He = {}, $e = function(p, f) {
+    return $e = Object.setPrototypeOf || {
       __proto__: []
     } instanceof Array && function(e, m) {
       e.__proto__ = m;
     } || function(e, m) {
       for (var g in m) Object.prototype.hasOwnProperty.call(m, g) && (e[g] = m[g]);
-    }, je(p, f);
+    }, $e(p, f);
   };
-  function t_(p, f) {
+  function e_(p, f) {
     if (typeof f != "function" && f !== null) throw new TypeError("Class extends value " + String(f) + " is not a constructor or null");
-    je(p, f);
+    $e(p, f);
     function e() {
       this.constructor = p;
     }
@@ -72,34 +72,34 @@
       return f;
     }, ce.apply(this, arguments);
   };
-  function e_(p, f) {
+  function r_(p, f) {
     var e = {};
     for (var m in p) Object.prototype.hasOwnProperty.call(p, m) && f.indexOf(m) < 0 && (e[m] = p[m]);
     if (p != null && typeof Object.getOwnPropertySymbols == "function") for (var g = 0, m = Object.getOwnPropertySymbols(p); g < m.length; g++) f.indexOf(m[g]) < 0 && Object.prototype.propertyIsEnumerable.call(p, m[g]) && (e[m[g]] = p[m[g]]);
     return e;
   }
-  function r_(p, f, e, m) {
+  function __(p, f, e, m) {
     var g = arguments.length, h = g < 3 ? f : m === null ? m = Object.getOwnPropertyDescriptor(f, e) : m, P;
     if (typeof Reflect == "object" && typeof Reflect.decorate == "function") h = Reflect.decorate(p, f, e, m);
     else for (var R = p.length - 1; R >= 0; R--) (P = p[R]) && (h = (g < 3 ? P(h) : g > 3 ? P(f, e, h) : P(f, e)) || h);
     return g > 3 && h && Object.defineProperty(f, e, h), h;
   }
-  function __(p, f) {
+  function n_(p, f) {
     return function(e, m) {
       f(e, m, p);
     };
   }
-  function n_(p, f, e, m, g, h) {
+  function s_(p, f, e, m, g, h) {
     function P(u) {
       if (u !== void 0 && typeof u != "function") throw new TypeError("Function expected");
       return u;
     }
-    for (var R = m.kind, n = R === "getter" ? "get" : R === "setter" ? "set" : "value", E = !f && p ? m.static ? p : p.prototype : null, _ = f || (E ? Object.getOwnPropertyDescriptor(E, m.name) : {}), M, j = false, Z = e.length - 1; Z >= 0; Z--) {
+    for (var R = m.kind, n = R === "getter" ? "get" : R === "setter" ? "set" : "value", E = !f && p ? m.static ? p : p.prototype : null, _ = f || (E ? Object.getOwnPropertyDescriptor(E, m.name) : {}), M, $ = false, Z = e.length - 1; Z >= 0; Z--) {
       var x = {};
       for (var a in m) x[a] = a === "access" ? {} : m[a];
       for (var a in m.access) x.access[a] = m.access[a];
       x.addInitializer = function(u) {
-        if (j) throw new TypeError("Cannot add initializers after decoration has completed");
+        if ($) throw new TypeError("Cannot add initializers after decoration has completed");
         h.push(P(u || null));
       };
       var s = (0, e[Z])(R === "accessor" ? {
@@ -112,25 +112,25 @@
         (M = P(s.get)) && (_.get = M), (M = P(s.set)) && (_.set = M), (M = P(s.init)) && g.unshift(M);
       } else (M = P(s)) && (R === "field" ? g.unshift(M) : _[n] = M);
     }
-    E && Object.defineProperty(E, m.name, _), j = true;
+    E && Object.defineProperty(E, m.name, _), $ = true;
   }
-  function s_(p, f, e) {
+  function a_(p, f, e) {
     for (var m = arguments.length > 2, g = 0; g < f.length; g++) e = m ? f[g].call(p, e) : f[g].call(p);
     return m ? e : void 0;
   }
-  function a_(p) {
+  function o_(p) {
     return typeof p == "symbol" ? p : "".concat(p);
   }
-  function o_(p, f, e) {
+  function i_(p, f, e) {
     return typeof f == "symbol" && (f = f.description ? "[".concat(f.description, "]") : ""), Object.defineProperty(p, "name", {
       configurable: true,
       value: e ? "".concat(e, " ", f) : f
     });
   }
-  function i_(p, f) {
+  function u_(p, f) {
     if (typeof Reflect == "object" && typeof Reflect.metadata == "function") return Reflect.metadata(p, f);
   }
-  function u_(p, f, e, m) {
+  function c_(p, f, e, m) {
     function g(h) {
       return h instanceof e ? h : new e(function(P) {
         P(h);
@@ -157,7 +157,7 @@
       E((m = m.apply(p, f || [])).next());
     });
   }
-  function c_(p, f) {
+  function m_(p, f) {
     var e = {
       label: 0,
       sent: function() {
@@ -251,7 +251,7 @@
   }) : (function(p, f, e, m) {
     m === void 0 && (m = e), p[m] = f[e];
   });
-  function m_(p, f) {
+  function l_(p, f) {
     for (var e in p) e !== "default" && !Object.prototype.hasOwnProperty.call(f, e) && le(f, p, e);
   }
   function me(p) {
@@ -286,23 +286,23 @@
     }
     return h;
   }
-  function l_() {
+  function f_() {
     for (var p = [], f = 0; f < arguments.length; f++) p = p.concat(We(arguments[f]));
     return p;
   }
-  function f_() {
+  function p_() {
     for (var p = 0, f = 0, e = arguments.length; f < e; f++) p += arguments[f].length;
     for (var m = Array(p), g = 0, f = 0; f < e; f++) for (var h = arguments[f], P = 0, R = h.length; P < R; P++, g++) m[g] = h[P];
     return m;
   }
-  function p_(p, f, e) {
+  function b_(p, f, e) {
     if (e || arguments.length === 2) for (var m = 0, g = f.length, h; m < g; m++) (h || !(m in f)) && (h || (h = Array.prototype.slice.call(f, 0, m)), h[m] = f[m]);
     return p.concat(h || Array.prototype.slice.call(f));
   }
   function xt(p) {
     return this instanceof xt ? (this.v = p, this) : new xt(p);
   }
-  function b_(p, f, e) {
+  function g_(p, f, e) {
     if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
     var m = e.apply(p, f || []), g, h = [];
     return g = Object.create((typeof AsyncIterator == "function" ? AsyncIterator : Object).prototype), R("next"), R("throw"), R("return", P), g[Symbol.asyncIterator] = function() {
@@ -329,11 +329,11 @@
       try {
         E(m[Z](x));
       } catch (a) {
-        j(h[0][3], a);
+        $(h[0][3], a);
       }
     }
     function E(Z) {
-      Z.value instanceof xt ? Promise.resolve(Z.value.v).then(_, M) : j(h[0][2], Z);
+      Z.value instanceof xt ? Promise.resolve(Z.value.v).then(_, M) : $(h[0][2], Z);
     }
     function _(Z) {
       n("next", Z);
@@ -341,11 +341,11 @@
     function M(Z) {
       n("throw", Z);
     }
-    function j(Z, x) {
+    function $(Z, x) {
       Z(x), h.shift(), h.length && n(h[0][0], h[0][1]);
     }
   }
-  function g_(p) {
+  function h_(p) {
     var f, e;
     return f = {}, m("next"), m("throw", function(g) {
       throw g;
@@ -361,7 +361,7 @@
       } : h;
     }
   }
-  function h_(p) {
+  function O_(p) {
     if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
     var f = p[Symbol.asyncIterator], e;
     return f ? f.call(p) : (p = typeof me == "function" ? me(p) : p[Symbol.iterator](), e = {}, m("next"), m("throw"), m("return"), e[Symbol.asyncIterator] = function() {
@@ -383,52 +383,52 @@
       }, P);
     }
   }
-  function O_(p, f) {
+  function P_(p, f) {
     return Object.defineProperty ? Object.defineProperty(p, "raw", {
       value: f
     }) : p.raw = f, p;
   }
-  var ds = Object.create ? (function(p, f) {
+  var ks = Object.create ? (function(p, f) {
     Object.defineProperty(p, "default", {
       enumerable: true,
       value: f
     });
   }) : function(p, f) {
     p.default = f;
-  }, $e = function(p) {
-    return $e = Object.getOwnPropertyNames || function(f) {
+  }, je = function(p) {
+    return je = Object.getOwnPropertyNames || function(f) {
       var e = [];
       for (var m in f) Object.prototype.hasOwnProperty.call(f, m) && (e[e.length] = m);
       return e;
-    }, $e(p);
+    }, je(p);
   };
-  function P_(p) {
+  function y_(p) {
     if (p && p.__esModule) return p;
     var f = {};
-    if (p != null) for (var e = $e(p), m = 0; m < e.length; m++) e[m] !== "default" && le(f, p, e[m]);
-    return ds(f, p), f;
+    if (p != null) for (var e = je(p), m = 0; m < e.length; m++) e[m] !== "default" && le(f, p, e[m]);
+    return ks(f, p), f;
   }
-  function y_(p) {
+  function E_(p) {
     return p && p.__esModule ? p : {
       default: p
     };
   }
-  function E_(p, f, e, m) {
+  function v_(p, f, e, m) {
     if (e === "a" && !m) throw new TypeError("Private accessor was defined without a getter");
     if (typeof f == "function" ? p !== f || !m : !f.has(p)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
     return e === "m" ? m : e === "a" ? m.call(p) : m ? m.value : f.get(p);
   }
-  function v_(p, f, e, m, g) {
+  function R_(p, f, e, m, g) {
     if (m === "m") throw new TypeError("Private method is not writable");
     if (m === "a" && !g) throw new TypeError("Private accessor was defined without a setter");
     if (typeof f == "function" ? p !== f || !g : !f.has(p)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
     return m === "a" ? g.call(p, e) : g ? g.value = e : f.set(p, e), e;
   }
-  function R_(p, f) {
+  function w_(p, f) {
     if (f === null || typeof f != "object" && typeof f != "function") throw new TypeError("Cannot use 'in' operator on non-object");
     return typeof p == "function" ? f === p : p.has(f);
   }
-  function w_(p, f, e) {
+  function A_(p, f, e) {
     if (f != null) {
       if (typeof f != "object" && typeof f != "function") throw new TypeError("Object expected.");
       var m, g;
@@ -457,13 +457,13 @@
     });
     return f;
   }
-  var ks = typeof SuppressedError == "function" ? SuppressedError : function(p, f, e) {
+  var xs = typeof SuppressedError == "function" ? SuppressedError : function(p, f, e) {
     var m = new Error(e);
     return m.name = "SuppressedError", m.error = p, m.suppressed = f, m;
   };
-  function A_(p) {
+  function T_(p) {
     function f(h) {
-      p.error = p.hasError ? new ks(h, p.error, "An error was suppressed during disposal.") : h, p.hasError = true;
+      p.error = p.hasError ? new xs(h, p.error, "An error was suppressed during disposal.") : h, p.hasError = true;
     }
     var e, m = 0;
     function g() {
@@ -483,84 +483,84 @@
     }
     return g();
   }
-  function T_(p, f) {
+  function S_(p, f) {
     return typeof p == "string" && /^\.\.?\//.test(p) ? p.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(e, m, g, h, P) {
       return m ? f ? ".jsx" : ".js" : g && (!h || !P) ? e : g + h + "." + P.toLowerCase() + "js";
     }) : p;
   }
-  const xs = {
-    __extends: t_,
+  const Us = {
+    __extends: e_,
     __assign: ce,
-    __rest: e_,
-    __decorate: r_,
-    __param: __,
-    __esDecorate: n_,
-    __runInitializers: s_,
-    __propKey: a_,
-    __setFunctionName: o_,
-    __metadata: i_,
-    __awaiter: u_,
-    __generator: c_,
+    __rest: r_,
+    __decorate: __,
+    __param: n_,
+    __esDecorate: s_,
+    __runInitializers: a_,
+    __propKey: o_,
+    __setFunctionName: i_,
+    __metadata: u_,
+    __awaiter: c_,
+    __generator: m_,
     __createBinding: le,
-    __exportStar: m_,
+    __exportStar: l_,
     __values: me,
     __read: We,
-    __spread: l_,
-    __spreadArrays: f_,
-    __spreadArray: p_,
+    __spread: f_,
+    __spreadArrays: p_,
+    __spreadArray: b_,
     __await: xt,
-    __asyncGenerator: b_,
-    __asyncDelegator: g_,
-    __asyncValues: h_,
-    __makeTemplateObject: O_,
-    __importStar: P_,
-    __importDefault: y_,
-    __classPrivateFieldGet: E_,
-    __classPrivateFieldSet: v_,
-    __classPrivateFieldIn: R_,
-    __addDisposableResource: w_,
-    __disposeResources: A_,
-    __rewriteRelativeImportExtension: T_
-  }, Us = Object.freeze(Object.defineProperty({
+    __asyncGenerator: g_,
+    __asyncDelegator: h_,
+    __asyncValues: O_,
+    __makeTemplateObject: P_,
+    __importStar: y_,
+    __importDefault: E_,
+    __classPrivateFieldGet: v_,
+    __classPrivateFieldSet: R_,
+    __classPrivateFieldIn: w_,
+    __addDisposableResource: A_,
+    __disposeResources: T_,
+    __rewriteRelativeImportExtension: S_
+  }, Ms = Object.freeze(Object.defineProperty({
     __proto__: null,
-    __addDisposableResource: w_,
+    __addDisposableResource: A_,
     get __assign() {
       return ce;
     },
-    __asyncDelegator: g_,
-    __asyncGenerator: b_,
-    __asyncValues: h_,
+    __asyncDelegator: h_,
+    __asyncGenerator: g_,
+    __asyncValues: O_,
     __await: xt,
-    __awaiter: u_,
-    __classPrivateFieldGet: E_,
-    __classPrivateFieldIn: R_,
-    __classPrivateFieldSet: v_,
+    __awaiter: c_,
+    __classPrivateFieldGet: v_,
+    __classPrivateFieldIn: w_,
+    __classPrivateFieldSet: R_,
     __createBinding: le,
-    __decorate: r_,
-    __disposeResources: A_,
-    __esDecorate: n_,
-    __exportStar: m_,
-    __extends: t_,
-    __generator: c_,
-    __importDefault: y_,
-    __importStar: P_,
-    __makeTemplateObject: O_,
-    __metadata: i_,
-    __param: __,
-    __propKey: a_,
+    __decorate: __,
+    __disposeResources: T_,
+    __esDecorate: s_,
+    __exportStar: l_,
+    __extends: e_,
+    __generator: m_,
+    __importDefault: E_,
+    __importStar: y_,
+    __makeTemplateObject: P_,
+    __metadata: u_,
+    __param: n_,
+    __propKey: o_,
     __read: We,
-    __rest: e_,
-    __rewriteRelativeImportExtension: T_,
-    __runInitializers: s_,
-    __setFunctionName: o_,
-    __spread: l_,
-    __spreadArray: p_,
-    __spreadArrays: f_,
+    __rest: r_,
+    __rewriteRelativeImportExtension: S_,
+    __runInitializers: a_,
+    __setFunctionName: i_,
+    __spread: f_,
+    __spreadArray: b_,
+    __spreadArrays: p_,
     __values: me,
-    default: xs
+    default: Us
   }, Symbol.toStringTag, {
     value: "Module"
-  })), fe = Ls(Us);
+  })), fe = ds(Ms);
   var ae = {}, oe = {}, ft = {}, Cr;
   function pe() {
     return Cr || (Cr = 1, Object.defineProperty(ft, "__esModule", {
@@ -568,7 +568,7 @@
     }), ft.E_CANCELED = ft.E_ALREADY_LOCKED = ft.E_TIMEOUT = void 0, ft.E_TIMEOUT = new Error("timeout while waiting for mutex to become available"), ft.E_ALREADY_LOCKED = new Error("mutex already locked"), ft.E_CANCELED = new Error("request for lock canceled")), ft;
   }
   var Br;
-  function S_() {
+  function I_() {
     if (Br) return oe;
     Br = 1, Object.defineProperty(oe, "__esModule", {
       value: true
@@ -674,12 +674,12 @@
     return oe.default = e, oe;
   }
   var zr;
-  function Ms() {
+  function Fs() {
     if (zr) return ae;
     zr = 1, Object.defineProperty(ae, "__esModule", {
       value: true
     });
-    var p = fe, f = S_(), e = (function() {
+    var p = fe, f = I_(), e = (function() {
       function m(g) {
         this._semaphore = new f.default(1, g);
       }
@@ -718,7 +718,7 @@
     return ae.default = e, ae;
   }
   var Gt = {}, Vr;
-  function I_() {
+  function N_() {
     if (Vr) return Gt;
     Vr = 1, Object.defineProperty(Gt, "__esModule", {
       value: true
@@ -730,7 +730,7 @@
         acquire: function() {
           return new Promise(function(R, n) {
             return (0, p.__awaiter)(P, void 0, void 0, function() {
-              var E, _, M, j, Z;
+              var E, _, M, $, Z;
               return (0, p.__generator)(this, function(x) {
                 switch (x.label) {
                   case 0:
@@ -748,7 +748,7 @@
                       m.acquire()
                     ];
                   case 2:
-                    return M = x.sent(), E ? (j = Array.isArray(M) ? M[1] : M, j()) : (clearTimeout(_), R(M)), [
+                    return M = x.sent(), E ? ($ = Array.isArray(M) ? M[1] : M, $()) : (clearTimeout(_), R(M)), [
                       3,
                       4
                     ];
@@ -841,45 +841,45 @@
     return Gt.withTimeout = e, Gt;
   }
   var Qt = {}, Gr;
-  function Fs() {
+  function qs() {
     if (Gr) return Qt;
     Gr = 1, Object.defineProperty(Qt, "__esModule", {
       value: true
     }), Qt.tryAcquire = void 0;
-    var p = pe(), f = I_();
+    var p = pe(), f = N_();
     function e(m, g) {
       return g === void 0 && (g = p.E_ALREADY_LOCKED), (0, f.withTimeout)(m, 0, g);
     }
     return Qt.tryAcquire = e, Qt;
   }
   var Qr;
-  function qs() {
+  function Ds() {
     return Qr || (Qr = 1, (function(p) {
       Object.defineProperty(p, "__esModule", {
         value: true
       }), p.tryAcquire = p.withTimeout = p.Semaphore = p.Mutex = void 0;
-      var f = fe, e = Ms();
+      var f = fe, e = Fs();
       Object.defineProperty(p, "Mutex", {
         enumerable: true,
         get: function() {
           return e.default;
         }
       });
-      var m = S_();
+      var m = I_();
       Object.defineProperty(p, "Semaphore", {
         enumerable: true,
         get: function() {
           return m.default;
         }
       });
-      var g = I_();
+      var g = N_();
       Object.defineProperty(p, "withTimeout", {
         enumerable: true,
         get: function() {
           return g.withTimeout;
         }
       });
-      var h = Fs();
+      var h = qs();
       Object.defineProperty(p, "tryAcquire", {
         enumerable: true,
         get: function() {
@@ -889,7 +889,7 @@
     })(He)), He;
   }
   var Tt = {}, F = {}, Yr;
-  function N_() {
+  function Z_() {
     if (Yr) return F;
     Yr = 1, Object.defineProperty(F, "__esModule", {
       value: true
@@ -936,7 +936,7 @@
     })(E || (F.Z3_goal_prec = E = {})), F;
   }
   var ie = {}, Hr;
-  function Ds() {
+  function Cs() {
     if (Hr) return ie;
     Hr = 1, Object.defineProperty(ie, "__esModule", {
       value: true
@@ -952,7 +952,7 @@
       function h(a, s) {
         return Array.from(new Uint32Array(e.HEAPU32.buffer, a, s));
       }
-      let P = e._malloc(24), R = new Uint32Array(e.HEAPU32.buffer, P, 4), n = (a) => R[a], E = new Int32Array(e.HEAPU32.buffer, P, 4), _ = (a) => E[a], M = new BigUint64Array(e.HEAPU32.buffer, P, 2), j = (a) => M[a], Z = new BigInt64Array(e.HEAPU32.buffer, P, 2), x = (a) => Z[a];
+      let P = e._malloc(24), R = new Uint32Array(e.HEAPU32.buffer, P, 4), n = (a) => R[a], E = new Int32Array(e.HEAPU32.buffer, P, 4), _ = (a) => E[a], M = new BigUint64Array(e.HEAPU32.buffer, P, 2), $ = (a) => M[a], Z = new BigInt64Array(e.HEAPU32.buffer, P, 2), x = (a) => Z[a];
       return {
         em: e,
         Z3: {
@@ -2158,7 +2158,7 @@
               a,
               s,
               P
-            ]) ? j(0) : null;
+            ]) ? $(0) : null;
           },
           get_array_arity: function(a, s) {
             let u = e.ccall("Z3_get_array_arity", "number", [
@@ -2574,7 +2574,7 @@
               a,
               s,
               P
-            ]) ? j(0) : null;
+            ]) ? $(0) : null;
           },
           get_numeral_int64: function(a, s) {
             return e.ccall("Z3_get_numeral_int64", "boolean", [
@@ -4252,7 +4252,7 @@
               a,
               s,
               P
-            ]) ? j(0) : null;
+            ]) ? $(0) : null;
           },
           fpa_get_numeral_exponent_string: function(a, s, u) {
             return e.ccall("Z3_fpa_get_numeral_exponent_string", "string", [
@@ -4724,9 +4724,9 @@
     }
     return ie;
   }
-  var jr;
-  function Z_() {
-    return jr || (jr = 1, (function(p) {
+  var $r;
+  function L_() {
+    return $r || ($r = 1, (function(p) {
       var f = Tt && Tt.__createBinding || (Object.create ? (function(m, g, h, P) {
         P === void 0 && (P = h);
         var R = Object.getOwnPropertyDescriptor(g, h);
@@ -4743,13 +4743,13 @@
       };
       Object.defineProperty(p, "__esModule", {
         value: true
-      }), e(N_(), p), e(Ds(), p);
+      }), e(Z_(), p), e(Cs(), p);
     })(Tt)), Tt;
   }
-  var St = {}, $r;
+  var St = {}, jr;
   function be() {
-    if ($r) return St;
-    $r = 1, Object.defineProperty(St, "__esModule", {
+    if (jr) return St;
+    jr = 1, Object.defineProperty(St, "__esModule", {
       value: true
     }), St.Z3AssertionError = St.Z3Error = void 0;
     class p extends Error {
@@ -4760,7 +4760,7 @@
     return St.Z3AssertionError = f, St;
   }
   var kt = {}, Xr;
-  function Cs() {
+  function Bs() {
     if (Xr) return kt;
     Xr = 1, Object.defineProperty(kt, "__esModule", {
       value: true
@@ -4780,12 +4780,12 @@
     return kt;
   }
   var Kr;
-  function Bs() {
+  function zs() {
     if (Kr) return se;
     Kr = 1, Object.defineProperty(se, "__esModule", {
       value: true
     }), se.createApi = R;
-    const p = qs(), f = Z_(), e = be(), m = Cs(), g = 17, h = new p.Mutex();
+    const p = Ds(), f = L_(), e = be(), m = Bs(), g = 17, h = new p.Mutex();
     function P(n) {
       const E = n !== null && (typeof n == "object" || typeof n == "function") && n.numerator !== null && (typeof n.numerator == "number" || typeof n.numerator == "bigint") && n.denominator !== null && (typeof n.denominator == "number" || typeof n.denominator == "bigint");
       return E && (0, m.assert)((typeof n.numerator != "number" || Number.isSafeInteger(n.numerator)) && (typeof n.denominator != "number" || Number.isSafeInteger(n.denominator)), "Fraction numerator and denominator must be integers"), E;
@@ -4798,7 +4798,7 @@
       function M(d) {
         n.disable_trace(d);
       }
-      function j() {
+      function $() {
         return n.get_version();
       }
       function Z() {
@@ -4931,13 +4931,13 @@
           for (let l = 1; l < t.length; l++) i = new Wt(c(r(o, i.ptr, Je(t[l]).ptr)));
           return i;
         }
-        function k_() {
+        function x_() {
           c(n.interrupt(o));
         }
-        function x_(r) {
+        function U_(r) {
           n.set_ast_print_mode(o, r);
         }
-        function U_(r) {
+        function M_(r) {
           const t = r instanceof Dt;
           return t && O(r), t;
         }
@@ -4945,7 +4945,7 @@
           const t = r instanceof Kt;
           return t && O(r), t;
         }
-        function jt(r) {
+        function $t(r) {
           const t = r instanceof _t;
           return t && O(r), t;
         }
@@ -4979,31 +4979,31 @@
           const t = r instanceof K && r.sort.kind() === f.Z3_sort_kind.Z3_BOOL_SORT;
           return t && O(r), t;
         }
-        function M_(r) {
+        function F_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_TRUE);
         }
-        function F_(r) {
+        function q_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_FALSE);
         }
-        function q_(r) {
+        function D_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_AND);
         }
-        function D_(r) {
+        function C_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_OR);
         }
-        function C_(r) {
+        function B_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_IMPLIES);
         }
-        function B_(r) {
+        function z_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_NOT);
         }
-        function z_(r) {
+        function V_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_EQ);
         }
-        function V_(r) {
+        function G_(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_DISTINCT);
         }
-        function G_(r) {
+        function Q_(r) {
           const t = r instanceof Ge;
           return t && O(r), t;
         }
@@ -5011,58 +5011,58 @@
           const t = r instanceof k;
           return t && O(r), t;
         }
-        function Q_(r) {
+        function Y_(r) {
           const t = r instanceof Ct;
           return t && O(r), t;
         }
         function Oe(r) {
           return ct(r) && Zt(r.sort);
         }
-        function Y_(r) {
+        function H_(r) {
           const t = r instanceof Bt;
           return t && O(r), t;
         }
         function Zt(r) {
-          return jt(r) && r.kind() === f.Z3_sort_kind.Z3_INT_SORT;
+          return $t(r) && r.kind() === f.Z3_sort_kind.Z3_INT_SORT;
         }
         function Pe(r) {
           return ct(r) && ye(r.sort);
         }
-        function H_(r) {
+        function $_(r) {
           const t = r instanceof Ce;
           return t && O(r), t;
         }
         function ye(r) {
-          return jt(r) && r.kind() === f.Z3_sort_kind.Z3_REAL_SORT;
+          return $t(r) && r.kind() === f.Z3_sort_kind.Z3_REAL_SORT;
         }
         function j_(r) {
           const t = r instanceof W;
           return t && O(r), t;
         }
-        function $t(r) {
+        function jt(r) {
           const t = r instanceof Be;
           return t && O(r), t;
         }
-        function $_(r) {
+        function X_(r) {
           const t = r instanceof T;
           return t && O(r), t;
         }
-        function X_(r) {
+        function K_(r) {
           const t = r instanceof ze;
           return t && O(r), t;
         }
-        function K_(r) {
+        function W_(r) {
           const t = r instanceof ee;
           return t && O(r), t;
         }
-        function W_(r) {
+        function J_(r) {
           const t = r instanceof re;
           return t && O(r), t;
         }
-        function J_(r) {
+        function tn(r) {
           return ut(r, f.Z3_decl_kind.Z3_OP_CONST_ARRAY);
         }
-        function tn(r) {
+        function en(r) {
           const t = r instanceof Ve;
           return t && O(r), t;
         }
@@ -5070,7 +5070,7 @@
           const t = r instanceof Pt;
           return t && O(r), t;
         }
-        function en(r) {
+        function rn(r) {
           const t = r instanceof yt;
           return t && O(r), t;
         }
@@ -5078,7 +5078,7 @@
           const t = r instanceof J;
           return t && O(r), t;
         }
-        function rn(r) {
+        function _n(r) {
           const t = r instanceof dt;
           return t && O(r), t;
         }
@@ -5090,14 +5090,14 @@
           const t = r instanceof at;
           return t && O(r), t;
         }
-        function _n(r) {
+        function nn(r) {
           const t = r instanceof U;
           return t && O(r), t;
         }
-        function nn(r) {
+        function sn(r) {
           return sr(r) && r.isString();
         }
-        function sn(r) {
+        function an(r) {
           return V(r) && r.isString();
         }
         function ht(r) {
@@ -5108,7 +5108,7 @@
           const t = r instanceof q;
           return t && O(r), t;
         }
-        function an(r) {
+        function on(r) {
           const t = r instanceof Lt;
           return t && O(r), t;
         }
@@ -5116,14 +5116,14 @@
           const t = r instanceof G;
           return t && O(r), t;
         }
-        function on(r, t) {
+        function un(r, t) {
           return r.eqIdentity(t);
         }
-        function un(r) {
+        function cn(r) {
           return (0, m.assert)(_r(r), "Z3 bound variable expected"), n.get_index_value(o, r.ast);
         }
         function B(r) {
-          if (typeof r == "boolean") return $.val(r);
+          if (typeof r == "boolean") return j.val(r);
           if (typeof r == "number") {
             if (!Number.isFinite(r)) throw new Error(`cannot represent infinity/NaN (got ${r})`);
             return Math.floor(r) === r ? Q.val(r) : et.val(r);
@@ -5134,19 +5134,19 @@
           }
           (0, m.assert)(false);
         }
-        async function cn(...r) {
+        async function mn(...r) {
           const t = new L.Solver();
           t.add(...r);
           const i = await t.check();
           return i === "sat" ? t.model() : i;
         }
-        async function mn(r) {
+        async function ln(r) {
           const t = await n.simplify(o, r.ast);
           return N(c(t));
         }
-        const ln = {
+        const fn = {
           declare: (r) => new _t(n.mk_uninterpreted_sort(o, I(r)))
-        }, fn = {
+        }, pn = {
           declare: (r, ...t) => {
             const i = t.length - 1, l = t[i];
             O(l);
@@ -5161,7 +5161,7 @@
             for (let y = 0; y < t; y++) O(r[y]), l.push(r[y].ptr);
             return new H(n.mk_fresh_func_decl(o, "f", l, i.ptr));
           }
-        }, pn = {
+        }, bn = {
           declare: (r, ...t) => {
             const i = t.length - 1, l = t[i];
             O(l);
@@ -5172,16 +5172,16 @@
           addDefinition: (r, t, i) => {
             O(r, ...t, i), c(n.add_rec_def(o, r.ptr, t.map((l) => l.ast), i.ast));
           }
-        }, $ = {
+        }, j = {
           sort: () => new dr(n.mk_bool_sort(o)),
-          const: (r) => new A(n.mk_const(o, I(r), $.sort().ptr)),
-          consts: (r) => (typeof r == "string" && (r = r.split(" ")), r.map((t) => $.const(t))),
+          const: (r) => new A(n.mk_const(o, I(r), j.sort().ptr)),
+          consts: (r) => (typeof r == "string" && (r = r.split(" ")), r.map((t) => j.const(t))),
           vector: (r, t) => {
             const i = [];
-            for (let l = 0; l < t; l++) i.push($.const(`${r}__${l}`));
+            for (let l = 0; l < t; l++) i.push(j.const(`${r}__${l}`));
             return i;
           },
-          fresh: (r = "b") => new A(n.mk_fresh_const(o, r, $.sort().ptr)),
+          fresh: (r = "b") => new A(n.mk_fresh_const(o, r, j.sort().ptr)),
           val: (r) => r ? new A(n.mk_true(o)) : new A(n.mk_false(o))
         }, Q = {
           sort: () => new Ct(n.mk_int_sort(o)),
@@ -5205,7 +5205,7 @@
           },
           fresh: (r = "b") => new k(n.mk_fresh_const(o, r, et.sort().ptr)),
           val: (r) => (P(r) && (r = `${r.numerator}/${r.denominator}`), new Ce(n.mk_numeral(o, r.toString(), et.sort().ptr)))
-        }, bn = Object.assign((r) => new W(r), {
+        }, gn = Object.assign((r) => new W(r), {
           pi: () => new W(c(n.rcf_mk_pi(o))),
           e: () => new W(c(n.rcf_mk_e(o))),
           infinitesimal: () => new W(c(n.rcf_mk_infinitesimal(o))),
@@ -5220,13 +5220,13 @@
             return (0, m.assert)(Number.isSafeInteger(r), "number of bits must be an integer"), new Be(n.mk_bv_sort(o, r));
           },
           const(r, t) {
-            return new T(c(n.mk_const(o, I(r), $t(t) ? t.ptr : Ot.sort(t).ptr)));
+            return new T(c(n.mk_const(o, I(r), jt(t) ? t.ptr : Ot.sort(t).ptr)));
           },
           consts(r, t) {
             return typeof r == "string" && (r = r.split(" ")), r.map((i) => Ot.const(i, t));
           },
           val(r, t) {
-            return r === true ? Ot.val(1, t) : r === false ? Ot.val(0, t) : new ze(c(n.mk_numeral(o, r.toString(), $t(t) ? t.ptr : Ot.sort(t).ptr)));
+            return r === true ? Ot.val(1, t) : r === false ? Ot.val(0, t) : new ze(c(n.mk_numeral(o, r.toString(), jt(t) ? t.ptr : Ot.sort(t).ptr)));
           }
         }, X = {
           sort(r, t) {
@@ -5262,7 +5262,7 @@
           zero(r, t = false) {
             return new dt(c(n.mk_fpa_zero(o, r.ptr, t)));
           }
-        }, gn = {
+        }, hn = {
           sort() {
             return new Ve(n.mk_fpa_rounding_mode_sort(o));
           },
@@ -5304,7 +5304,7 @@
           unit(r) {
             return new at(c(n.mk_seq_unit(o, r.ast)));
           }
-        }, hn = {
+        }, On = {
           sort(r) {
             return new Ur(n.mk_re_sort(o, r.ptr));
           },
@@ -5330,10 +5330,10 @@
           }
         }, ir = {
           sort(r) {
-            return qt.sort(r, $.sort());
+            return qt.sort(r, j.sort());
           },
           const(r, t) {
-            return new lt(c(n.mk_const(o, I(r), qt.sort(t, $.sort()).ptr)));
+            return new lt(c(n.mk_const(o, I(r), qt.sort(t, j.sort()).ptr)));
           },
           consts(r, t) {
             return typeof r == "string" && (r = r.split(" ")), r.map((i) => ir.const(i, t));
@@ -5346,27 +5346,27 @@
             for (const l of r) i = Ze(i, l);
             return i;
           }
-        }, On = Object.assign((r) => new Mr(L, r), {
+        }, Pn = Object.assign((r) => new Mr(L, r), {
           createDatatypes(...r) {
             return Fr(...r);
           }
         });
         function Ee(r, t, i) {
-          return ht(r) && Ft(t) && Ft(i) ? cr(r, t, i) : ((0, m.assert)(!ht(r) && !Ft(t) && !Ft(i), "Mixed expressions and goals"), typeof r == "boolean" && (r = $.val(r)), t = B(t), i = B(i), N(c(n.mk_ite(o, r.ptr, t.ast, i.ast))));
+          return ht(r) && Ft(t) && Ft(i) ? cr(r, t, i) : ((0, m.assert)(!ht(r) && !Ft(t) && !Ft(i), "Mixed expressions and goals"), typeof r == "boolean" && (r = j.val(r)), t = B(t), i = B(i), N(c(n.mk_ite(o, r.ptr, t.ast, i.ast))));
         }
-        function Pn(...r) {
+        function yn(...r) {
           return (0, m.assert)(r.length > 0, "Can't make Distinct ouf of nothing"), new A(c(n.mk_distinct(o, r.map((t) => (t = B(t), O(t), t.ast)))));
         }
         function ur(r, t) {
           return O(t), N(c(n.mk_const(o, I(r), t.ptr)));
         }
-        function yn(r, t) {
+        function En(r, t) {
           return O(t), typeof r == "string" && (r = r.split(" ")), r.map((i) => ur(i, t));
         }
-        function En(r, t = "c") {
+        function vn(r, t = "c") {
           return O(r), N(n.mk_fresh_const(r.ctx.ptr, t, r.ptr));
         }
-        function vn(r, t) {
+        function Rn(r, t) {
           return O(t), N(n.mk_bound(t.ctx.ptr, r, t.ptr));
         }
         function ve(r, t) {
@@ -5375,7 +5375,7 @@
         function Re(r, t) {
           return r = B(r), t = B(t), O(r, t), new A(c(n.mk_iff(o, r.ptr, t.ptr)));
         }
-        function Rn(r, t) {
+        function wn(r, t) {
           return r = B(r), t = B(t), O(r, t), r.eq(t);
         }
         function we(r, t) {
@@ -5402,58 +5402,58 @@
             return O(...i), new A(c(n.mk_or(o, i.map((l) => l.ptr))));
           }
         }
-        function wn(r, t, i) {
+        function An(r, t, i) {
           if (O(...r), r.length !== t.length) throw new Error("Number of arguments and coefficients must match");
           return new A(c(n.mk_pbeq(o, r.map((l) => l.ast), t, i)));
         }
-        function An(r, t, i) {
+        function Tn(r, t, i) {
           if (O(...r), r.length !== t.length) throw new Error("Number of arguments and coefficients must match");
           return new A(c(n.mk_pbge(o, r.map((l) => l.ast), t, i)));
         }
-        function Tn(r, t, i) {
+        function Sn(r, t, i) {
           if (O(...r), r.length !== t.length) throw new Error("Number of arguments and coefficients must match");
           return new A(c(n.mk_pble(o, r.map((l) => l.ast), t, i)));
         }
-        function Sn(r, t) {
+        function In(r, t) {
           return O(...r), new A(c(n.mk_atmost(o, r.map((i) => i.ast), t)));
         }
-        function In(r, t) {
+        function Nn(r, t) {
           return O(...r), new A(c(n.mk_atleast(o, r.map((i) => i.ast), t)));
-        }
-        function Nn(r, t, i = 1) {
-          if (!(0, m.allSatisfy)(r, mt)) throw new Error("Quantifier variables must be constants");
-          return new Qe(c(n.mk_quantifier_const_ex(o, true, i, I(""), I(""), r.map((l) => l.ptr), [], [], t.ptr)));
         }
         function Zn(r, t, i = 1) {
           if (!(0, m.allSatisfy)(r, mt)) throw new Error("Quantifier variables must be constants");
+          return new Qe(c(n.mk_quantifier_const_ex(o, true, i, I(""), I(""), r.map((l) => l.ptr), [], [], t.ptr)));
+        }
+        function Ln(r, t, i = 1) {
+          if (!(0, m.allSatisfy)(r, mt)) throw new Error("Quantifier variables must be constants");
           return new Qe(c(n.mk_quantifier_const_ex(o, false, i, I(""), I(""), r.map((l) => l.ptr), [], [], t.ptr)));
         }
-        function Ln(r, t) {
+        function dn(r, t) {
           if (!(0, m.allSatisfy)(r, mt)) throw new Error("Quantifier variables must be constants");
           return new qr(c(n.mk_lambda_const(o, r.map((i) => i.ptr), t.ptr)));
         }
         function Se(r) {
           return r = B(r), O(r), (0, m.assert)(Oe(r), "Int expression expected"), new k(c(n.mk_int2real(o, r.ast)));
         }
-        function dn(r) {
+        function kn(r) {
           return C(r) || (r = et.val(r)), O(r), (0, m.assert)(Pe(r), "Real expression expected"), new k(c(n.mk_real2int(o, r.ast)));
         }
-        function kn(r) {
+        function xn(r) {
           return C(r) || (r = et.val(r)), O(r), (0, m.assert)(Pe(r), "Real expression expected"), new A(c(n.mk_is_int(o, r.ast)));
         }
-        function xn(r) {
+        function Un(r) {
           return C(r) || (r = et.val(r)), r.pow("1/2");
         }
-        function Un(r) {
+        function Mn(r) {
           return C(r) || (r = et.val(r)), r.pow("1/3");
         }
-        function Mn(r, t) {
+        function Fn(r, t) {
           return O(r), new k(c(n.mk_bv2int(o, r.ast, t)));
         }
-        function Fn(r, t) {
+        function qn(r, t) {
           return ct(r) ? (0, m.assert)(Oe(r), "parameter must be an integer") : ((0, m.assert)(typeof r != "number" || Number.isSafeInteger(r), "parameter must not have decimal places"), r = Q.val(r)), new T(c(n.mk_int2bv(o, t, r.ast)));
         }
-        function qn(...r) {
+        function Dn(...r) {
           return O(...r), r.reduce((t, i) => new T(c(n.mk_concat(o, t.ast, i.ast))));
         }
         function cr(r, t, i) {
@@ -5462,40 +5462,40 @@
         function rt(r) {
           return typeof r == "string" ? new q(r) : r;
         }
-        function Dn(r, t, ...i) {
+        function Cn(r, t, ...i) {
           let l = rt(r), y = rt(t);
           O(l, y), l = new q(c(n.tactic_and_then(o, l.ptr, y.ptr)));
           for (const v of i) y = rt(v), O(l, y), l = new q(c(n.tactic_and_then(o, l.ptr, y.ptr)));
           return l;
         }
-        function Cn(r, t, ...i) {
+        function Bn(r, t, ...i) {
           let l = rt(r), y = rt(t);
           O(l, y), l = new q(c(n.tactic_or_else(o, l.ptr, y.ptr)));
           for (const v of i) y = rt(v), O(l, y), l = new q(c(n.tactic_or_else(o, l.ptr, y.ptr)));
           return l;
         }
-        const Bn = 4294967295;
-        function zn(r, t) {
+        const zn = 4294967295;
+        function Vn(r, t) {
           const i = rt(r);
           O(i);
-          const l = t !== void 0 ? t : Bn;
+          const l = t !== void 0 ? t : zn;
           return new q(c(n.tactic_repeat(o, i.ptr, l)));
         }
-        function Vn(r, t) {
+        function Gn(r, t) {
           const i = rt(r);
           return O(i), new q(c(n.tactic_try_for(o, i.ptr, t)));
         }
-        function Gn(r, t) {
+        function Qn(r, t) {
           const i = rt(t);
           return O(r, i), new q(c(n.tactic_when(o, r.ptr, i.ptr)));
         }
-        function Qn() {
+        function Yn() {
           return new q(c(n.tactic_skip(o)));
         }
-        function Yn() {
+        function Hn() {
           return new q(c(n.tactic_fail(o)));
         }
-        function Hn(r) {
+        function $n(r) {
           return O(r), new q(c(n.tactic_fail_if(o, r.ptr)));
         }
         function jn(...r) {
@@ -5505,11 +5505,11 @@
           const i = t.map((l) => l.ptr);
           return new q(c(n.tactic_par_or(o, i)));
         }
-        function $n(r, t) {
+        function Xn(r, t) {
           const i = rt(r), l = rt(t);
           return O(i, l), new q(c(n.tactic_par_and_then(o, i.ptr, l.ptr)));
         }
-        function Xn(r, t) {
+        function Kn(r, t) {
           const i = rt(r);
           O(i);
           const l = c(n.mk_params(o));
@@ -5579,7 +5579,7 @@
           const l = i.slice(0, i.length - 1).map((y) => y.ast);
           return N(c(n.mk_store_n(o, r.ast, l, i[i.length - 1].ast)));
         }
-        function Kn(r, t) {
+        function Wn(r, t) {
           return N(c(n.mk_array_ext(o, r.ast, t.ast)));
         }
         function wr(...r) {
@@ -5605,7 +5605,7 @@
         function Le(r) {
           return new lt(c(n.mk_empty_set(o, r.ptr)));
         }
-        function Wn(r) {
+        function Jn(r) {
           return new lt(c(n.mk_full_set(o, r.ptr)));
         }
         function Nr(r, t) {
@@ -5615,63 +5615,63 @@
         function Zr(r, t) {
           return new A(c(n.mk_set_subset(o, r.ast, t.ast)));
         }
-        function Jn(r, t) {
+        function ts(r, t) {
           const i = V(r) ? r : z.val(r);
           return new A(c(n.mk_seq_in_re(o, i.ast, t.ast)));
         }
-        function ts(...r) {
+        function es(...r) {
           if (r.length === 0) throw new Error("Union requires at least one argument");
           return r.length === 1 ? r[0] : new U(c(n.mk_re_union(o, r.map((t) => t.ast))));
         }
-        function es(...r) {
+        function rs(...r) {
           if (r.length === 0) throw new Error("Intersect requires at least one argument");
           return r.length === 1 ? r[0] : new U(c(n.mk_re_intersect(o, r.map((t) => t.ast))));
         }
-        function rs(...r) {
+        function _s(...r) {
           if (r.length === 0) throw new Error("ReConcat requires at least one argument");
           return r.length === 1 ? r[0] : new U(c(n.mk_re_concat(o, r.map((t) => t.ast))));
         }
-        function _s(r) {
+        function ns(r) {
           return new U(c(n.mk_re_plus(o, r.ast)));
         }
-        function ns(r) {
+        function ss(r) {
           return new U(c(n.mk_re_star(o, r.ast)));
         }
-        function ss(r) {
+        function as(r) {
           return new U(c(n.mk_re_option(o, r.ast)));
         }
-        function as(r) {
+        function os(r) {
           return new U(c(n.mk_re_complement(o, r.ast)));
         }
-        function os(r, t) {
+        function is(r, t) {
           return new U(c(n.mk_re_diff(o, r.ast, t.ast)));
         }
-        function is(r, t) {
+        function us(r, t) {
           const i = V(r) ? r : z.val(r), l = V(t) ? t : z.val(t);
           return new U(c(n.mk_re_range(o, i.ast, l.ast)));
         }
-        function us(r, t, i = 0) {
+        function cs(r, t, i = 0) {
           return new U(c(n.mk_re_loop(o, r.ast, t, i)));
         }
-        function cs(r, t) {
+        function ms(r, t) {
           return new U(c(n.mk_re_power(o, r.ast, t)));
         }
-        function ms(r) {
+        function ls(r) {
           return new U(c(n.mk_re_allchar(o, r.ptr)));
         }
-        function ls(r) {
+        function fs(r) {
           return new U(c(n.mk_re_empty(o, r.ptr)));
         }
-        function fs(r) {
+        function ps(r) {
           return new U(c(n.mk_re_full(o, r.ptr)));
         }
-        function ps(r, t) {
+        function bs(r, t) {
           return new H(c(n.mk_partial_order(o, r.ptr, t)));
         }
-        function bs(r) {
+        function gs(r) {
           return new H(c(n.mk_transitive_closure(o, r.ptr)));
         }
-        async function gs(r, t, i) {
+        async function hs(r, t, i) {
           const l = await n.polynomial_subresultants(o, r.ast, t.ast, i.ast);
           return new G(c(l));
         }
@@ -5733,7 +5733,7 @@
             });
           }
           addAndTrack(t, i) {
-            typeof i == "string" && (i = $.const(i)), (0, m.assert)(mt(i), "Provided expression that is not a constant to addAndTrack"), c(n.solver_assert_and_track(o, this.ptr, t.ast, i.ast));
+            typeof i == "string" && (i = j.const(i)), (0, m.assert)(mt(i), "Provided expression that is not a constant to addAndTrack"), c(n.solver_assert_and_track(o, this.ptr, t.ast, i.ast));
           }
           addSimplifier(t) {
             O(t), c(n.solver_add_simplifier(o, this.ptr, t.ptr));
@@ -5807,7 +5807,7 @@
             n.solver_dec_ref(o, this.ptr), this._ptr = null, E.unregister(this);
           }
         }
-        class hs {
+        class Os {
           get ptr() {
             return Ut(this._ptr), this._ptr;
           }
@@ -5834,7 +5834,7 @@
             P(i) && (i = `${i.numerator}/${i.denominator}`), c(n.optimize_assert_soft(o, this.ptr, t.ast, i.toString(), I(l)));
           }
           addAndTrack(t, i) {
-            typeof i == "string" && (i = $.const(i)), (0, m.assert)(mt(i), "Provided expression that is not a constant to addAndTrack"), c(n.optimize_assert_and_track(o, this.ptr, t.ast, i.ast));
+            typeof i == "string" && (i = j.const(i)), (0, m.assert)(mt(i), "Provided expression that is not a constant to addAndTrack"), c(n.optimize_assert_and_track(o, this.ptr, t.ast, i.ast));
           }
           assertions() {
             return new G(c(n.optimize_get_assertions(o, this.ptr)));
@@ -5874,7 +5874,7 @@
             n.optimize_dec_ref(o, this.ptr), this._ptr = null, E.unregister(this);
           }
         }
-        class Os {
+        class Ps {
           get ptr() {
             return Ut(this._ptr), this._ptr;
           }
@@ -6043,7 +6043,7 @@
             } else if (It(t) || C(t) && mt(t)) {
               const l = this.getInterp(t);
               return (0, m.assert)(l !== null), l;
-            } else if (jt(t)) return this.getUniverse(t);
+            } else if ($t(t)) return this.getUniverse(t);
             (0, m.assert)(false, "Number, declaration or constant expected");
           }
           updateValue(t, i) {
@@ -6134,7 +6134,7 @@
             n.stats_dec_ref(o, this.ptr), this._ptr = null, E.unregister(this);
           }
         }
-        class Ps {
+        class ys {
           constructor(t) {
             this.ptr = t, this.ctx = L, n.func_entry_inc_ref(o, t), E.register(this, () => n.func_entry_dec_ref(o, t), this);
           }
@@ -6162,7 +6162,7 @@
             return c(n.func_interp_get_arity(o, this.ptr));
           }
           entry(t) {
-            return new Ps(c(n.func_interp_get_entry(o, this.ptr, t)));
+            return new ys(c(n.func_interp_get_entry(o, this.ptr, t)));
           }
           addEntry(t, i) {
             const l = new G();
@@ -6290,14 +6290,14 @@
             return [];
           }
         }
-        class ys {
+        class Es {
           constructor(t) {
             this.ptr = t, this.ctx = L;
           }
         }
         class dr extends _t {
           cast(t) {
-            return typeof t == "boolean" && (t = $.val(t)), (0, m.assert)(C(t), "true, false or Z3 Boolean expression expected."), (0, m.assert)(this.eqIdentity(t.sort), "Value cannot be converted into a Z3 Boolean value"), t;
+            return typeof t == "boolean" && (t = j.val(t)), (0, m.assert)(C(t), "true, false or Z3 Boolean expression expected."), (0, m.assert)(this.eqIdentity(t.sort), "Value cannot be converted into a Z3 Boolean value"), t;
           }
           subsort(t) {
             return O(t.ctx), t instanceof Ct;
@@ -6343,7 +6343,7 @@
           }
           add(...t) {
             for (const i of t) {
-              const l = Nt(i) ? i : $.val(i);
+              const l = Nt(i) ? i : j.val(i);
               O(l), n.goal_assert(o, this.ptr, l.ast);
             }
           }
@@ -6383,7 +6383,7 @@
           }
           asExpr() {
             const t = this.size();
-            if (t === 0) return $.val(true);
+            if (t === 0) return j.val(true);
             if (t === 1) return this.get(0);
             {
               const i = [];
@@ -6398,7 +6398,7 @@
             return n.goal_to_dimacs_string(o, this.ptr, t);
           }
         }
-        class Es {
+        class vs {
           constructor(t) {
             this.ctx = L, this.ptr = t, n.apply_result_inc_ref(o, t), E.register(this, () => n.apply_result_dec_ref(o, t), this);
           }
@@ -6414,7 +6414,7 @@
             return n.apply_result_to_string(o, this.ptr);
           }
         }
-        const vs = {
+        const Rs = {
           get(r, t) {
             if (typeof t == "string") {
               const i = parseInt(t, 10);
@@ -6432,8 +6432,8 @@
           async apply(t) {
             let i;
             Nt(t) ? (i = new Lt(), i.add(t)) : i = t, O(i);
-            const l = await n.tactic_apply(o, this.ptr, i.ptr), y = new Es(c(l));
-            return new Proxy(y, vs);
+            const l = await n.tactic_apply(o, this.ptr, i.ptr), y = new vs(c(l));
+            return new Proxy(y, Rs);
           }
           solver() {
             const t = c(n.mk_solver_from_tactic(o, this.ptr));
@@ -6452,7 +6452,7 @@
             return new q(i);
           }
         }
-        class Rs {
+        class ws {
           constructor(t) {
             this.ctx = L, t ? this.ptr = t : this.ptr = n.mk_params(o), n.params_inc_ref(o, this.ptr), E.register(this, () => n.params_dec_ref(o, this.ptr), this);
           }
@@ -6704,7 +6704,7 @@
             return n.get_bv_sort_size(o, this.ptr);
           }
           subsort(t) {
-            return $t(t) && this.size() < t.size();
+            return jt(t) && this.size() < t.size();
           }
           cast(t) {
             return C(t) ? (O(t), t) : ((0, m.assert)(!P(t), "Can't convert rational to BitVec"), Ot.val(t, this.size()));
@@ -7032,7 +7032,7 @@
             return ot(c(n.get_re_sort_basis(o, this.ptr)));
           }
           cast(t) {
-            if (_n(t)) return O(t), t;
+            if (nn(t)) return O(t), t;
             throw new Error("Can't cast to ReSort");
           }
         }
@@ -7151,7 +7151,7 @@
             return Fr(this)[0];
           }
         }
-        class ws extends _t {
+        class As extends _t {
           numConstructors() {
             return n.get_datatype_sort_num_constructors(o, this.ptr);
           }
@@ -7198,7 +7198,7 @@
             }
             const v = i.map((pt) => n.mk_string_symbol(o, pt)), D = n.mk_datatypes(o, v, l), it = [];
             for (let pt = 0; pt < D.length; pt++) {
-              const tt = new ws(D[pt]), Ye = tt.numConstructors();
+              const tt = new As(D[pt]), Ye = tt.numConstructors();
               for (let bt = 0; bt < Ye; bt++) {
                 const Et = tt.constructorDecl(bt), _e = tt.recognizer(bt), vt = Et.name().toString();
                 Et.arity() === 0 ? tt[vt] = Et.call() : tt[vt] = Et, tt[`is_${vt}`] = _e;
@@ -7232,7 +7232,7 @@
             return n.get_quantifier_num_patterns(o, this.ast);
           }
           pattern(t) {
-            return new ys(c(n.get_quantifier_pattern_ast(o, this.ast, t)));
+            return new Es(c(n.get_quantifier_pattern_ast(o, this.ast, t)));
           }
           num_no_patterns() {
             return n.get_quantifier_num_no_patterns(o, this.ast);
@@ -7349,7 +7349,7 @@
             return c(n.ast_vector_to_string(o, this.ptr));
           }
         }
-        class As {
+        class Ts {
           constructor(t = n.mk_ast_map(o)) {
             this.ptr = t, this.ctx = L, n.ast_map_inc_ref(o, t), E.register(this, () => n.ast_map_dec_ref(o, t), this);
           }
@@ -7390,28 +7390,28 @@
             return c(n.ast_map_to_string(o, this.ptr));
           }
         }
-        function Ts(r, ...t) {
+        function Ss(r, ...t) {
           O(r);
           const i = [], l = [];
           for (const [y, v] of t) O(y), O(v), i.push(y.ast), l.push(v.ast);
           return N(c(n.substitute(o, r.ast, i, l)));
         }
-        function Ss(r, ...t) {
+        function Is(r, ...t) {
           O(r);
           const i = [];
           for (const l of t) O(l), i.push(l.ast);
           return N(c(n.substitute_vars(o, r.ast, i)));
         }
-        function Is(r, ...t) {
+        function Ns(r, ...t) {
           O(r);
           const i = [], l = [];
           for (const [y, v] of t) O(y), O(v), i.push(y.ptr), l.push(v.ast);
           return N(c(n.substitute_funs(o, r.ast, i, l)));
         }
-        function Ns(r, t, i) {
+        function Zs(r, t, i) {
           return O(r), O(t), O(i), N(c(n.datatype_update_field(o, t.ptr, r.ast, i.ast)));
         }
-        function Zs(r) {
+        function Ls(r) {
           const t = [], i = [], l = [], y = [], v = new G(c(n.parse_smtlib2_string(o, r, t, i, l, y)));
           if (v.length() !== 1) throw new Error("Expected exactly one AST. Instead got " + v.length() + ": " + v.sexpr());
           return v.get(0);
@@ -7420,20 +7420,20 @@
           ptr: o,
           name: d,
           Solver: Lr,
-          Optimize: hs,
-          Fixedpoint: Os,
+          Optimize: Os,
+          Fixedpoint: Ps,
           Model: Dt,
           Tactic: q,
           Goal: Lt,
-          Params: Rs,
+          Params: ws,
           Simplifier: Jt,
           AstVector: G,
-          AstMap: As,
-          interrupt: k_,
-          setPrintMode: x_,
-          isModel: U_,
+          AstMap: Ts,
+          interrupt: x_,
+          setPrintMode: U_,
+          isModel: M_,
           isAst: er,
-          isSort: jt,
+          isSort: $t,
           isFuncDecl: It,
           isFuncInterp: rr,
           isApp: gt,
@@ -7442,104 +7442,104 @@
           isVar: _r,
           isAppOf: ut,
           isBool: Nt,
-          isTrue: M_,
-          isFalse: F_,
-          isAnd: q_,
-          isOr: D_,
-          isImplies: C_,
-          isNot: B_,
-          isEq: z_,
-          isDistinct: V_,
-          isQuantifier: G_,
+          isTrue: F_,
+          isFalse: q_,
+          isAnd: D_,
+          isOr: C_,
+          isImplies: B_,
+          isNot: z_,
+          isEq: V_,
+          isDistinct: G_,
+          isQuantifier: Q_,
           isArith: ct,
-          isArithSort: Q_,
+          isArithSort: Y_,
           isInt: Oe,
-          isIntVal: Y_,
+          isIntVal: H_,
           isIntSort: Zt,
           isReal: Pe,
-          isRealVal: H_,
+          isRealVal: $_,
           isRealSort: ye,
           isRCFNum: j_,
-          isBitVecSort: $t,
-          isBitVec: $_,
-          isBitVecVal: X_,
-          isFPRMSort: tn,
+          isBitVecSort: jt,
+          isBitVec: X_,
+          isBitVecVal: K_,
+          isFPRMSort: en,
           isFPRM: nr,
-          isFPSort: en,
+          isFPSort: rn,
           isFP: st,
-          isFPVal: rn,
+          isFPVal: _n,
           isSeqSort: sr,
           isSeq: V,
-          isStringSort: nn,
-          isString: sn,
-          isArraySort: K_,
-          isArray: W_,
-          isConstArray: J_,
+          isStringSort: sn,
+          isString: an,
+          isArraySort: W_,
+          isArray: J_,
+          isConstArray: tn,
           isProbe: ht,
           isTactic: Ft,
-          isGoal: an,
+          isGoal: on,
           isAstVector: ar,
-          eqIdentity: on,
-          getVarIndex: un,
+          eqIdentity: un,
+          getVarIndex: cn,
           from: B,
-          solve: cn,
-          Sort: ln,
-          Function: fn,
-          RecFunc: pn,
-          Bool: $,
+          solve: mn,
+          Sort: fn,
+          Function: pn,
+          RecFunc: bn,
+          Bool: j,
           Int: Q,
           Real: et,
-          RCFNum: bn,
+          RCFNum: gn,
           BitVec: Ot,
           Float: X,
-          FloatRM: gn,
+          FloatRM: hn,
           String: z,
           Seq: or,
-          Re: hn,
+          Re: On,
           Array: qt,
           Set: ir,
-          Datatype: On,
+          Datatype: Pn,
           If: Ee,
-          Distinct: Pn,
+          Distinct: yn,
           Const: ur,
-          Consts: yn,
-          FreshConst: En,
-          Var: vn,
+          Consts: En,
+          FreshConst: vn,
+          Var: Rn,
           Implies: ve,
           Iff: Re,
-          Eq: Rn,
+          Eq: wn,
           Xor: we,
           Not: Ae,
           And: Xt,
           Or: Te,
-          PbEq: wn,
-          PbGe: An,
-          PbLe: Tn,
-          AtMost: Sn,
-          AtLeast: In,
-          ForAll: Nn,
-          Exists: Zn,
-          Lambda: Ln,
+          PbEq: An,
+          PbGe: Tn,
+          PbLe: Sn,
+          AtMost: In,
+          AtLeast: Nn,
+          ForAll: Zn,
+          Exists: Ln,
+          Lambda: dn,
           ToReal: Se,
-          ToInt: dn,
-          IsInt: kn,
-          Sqrt: xn,
-          Cbrt: Un,
-          BV2Int: Mn,
-          Int2BV: Fn,
-          Concat: qn,
+          ToInt: kn,
+          IsInt: xn,
+          Sqrt: Un,
+          Cbrt: Mn,
+          BV2Int: Fn,
+          Int2BV: qn,
+          Concat: Dn,
           Cond: cr,
-          AndThen: Dn,
-          OrElse: Cn,
-          Repeat: zn,
-          TryFor: Vn,
-          When: Gn,
-          Skip: Qn,
-          Fail: Yn,
-          FailIf: Hn,
+          AndThen: Cn,
+          OrElse: Bn,
+          Repeat: Vn,
+          TryFor: Gn,
+          When: Qn,
+          Skip: Yn,
+          Fail: Hn,
+          FailIf: $n,
           ParOr: jn,
-          ParAndThen: $n,
-          With: Xn,
+          ParAndThen: Xn,
+          With: Kn,
           LT: mr,
           GT: lr,
           LE: fr,
@@ -7561,14 +7561,14 @@
           Mod: De,
           Select: Ie,
           Store: Ne,
-          Ext: Kn,
+          Ext: Wn,
           Extract: Rr,
-          substitute: Ts,
-          substituteVars: Ss,
-          substituteFuns: Is,
-          updateField: Ns,
-          simplify: mn,
-          ast_from_string: Zs,
+          substitute: Ss,
+          substituteVars: Is,
+          substituteFuns: Ns,
+          updateField: Zs,
+          simplify: ln,
+          ast_from_string: Ls,
           SetUnion: wr,
           SetIntersect: Ar,
           SetDifference: Tr,
@@ -7576,34 +7576,34 @@
           SetDel: Sr,
           SetComplement: Ir,
           EmptySet: Le,
-          FullSet: Wn,
+          FullSet: Jn,
           isMember: Nr,
           isSubset: Zr,
-          InRe: Jn,
-          Union: ts,
-          Intersect: es,
-          ReConcat: rs,
-          Plus: _s,
-          Star: ns,
-          Option: ss,
-          Complement: as,
-          Diff: os,
-          Range: is,
-          Loop: us,
-          Power: cs,
-          AllChar: ms,
-          Empty: ls,
-          Full: fs,
-          mkPartialOrder: ps,
-          mkTransitiveClosure: bs,
-          polynomialSubresultants: gs
+          InRe: ts,
+          Union: es,
+          Intersect: rs,
+          ReConcat: _s,
+          Plus: ns,
+          Star: ss,
+          Option: as,
+          Complement: os,
+          Diff: is,
+          Range: us,
+          Loop: cs,
+          Power: ms,
+          AllChar: ls,
+          Empty: fs,
+          Full: ps,
+          mkPartialOrder: bs,
+          mkTransitiveClosure: gs,
+          polynomialSubresultants: hs
         };
         return E.register(L, () => n.del_context(o)), L;
       }
       return {
         enableTrace: _,
         disableTrace: M,
-        getVersion: j,
+        getVersion: $,
         getVersionString: Z,
         getFullVersion: x,
         openLog: a,
@@ -7617,7 +7617,7 @@
     return se;
   }
   var Wr;
-  function zs() {
+  function Vs() {
     return Wr || (Wr = 1, (function(p) {
       var f = At && At.__createBinding || (Object.create ? (function(m, g, h, P) {
         P === void 0 && (P = h);
@@ -7635,11 +7635,11 @@
       };
       Object.defineProperty(p, "__esModule", {
         value: true
-      }), e(Bs(), p), e(be(), p);
+      }), e(zs(), p), e(be(), p);
     })(At)), At;
   }
   var Jr;
-  function Vs() {
+  function Gs() {
     return Jr || (Jr = 1, (function(p) {
       var f = wt && wt.__createBinding || (Object.create ? (function(P, R, n, E) {
         E === void 0 && (E = n);
@@ -7658,8 +7658,8 @@
       Object.defineProperty(p, "__esModule", {
         value: true
       }), p.init = h;
-      const m = zs(), g = Z_();
-      e(be(), p), e(N_(), p);
+      const m = Vs(), g = L_();
+      e(be(), p), e(Z_(), p);
       async function h() {
         const P = globalThis.initZ3;
         if (P === void 0) throw new Error("initZ3 was not imported correctly. Please consult documentation on how to load Z3 in browser");
@@ -7671,10 +7671,12 @@
       }
     })(wt)), wt;
   }
-  var L_ = Vs();
-  const { Context: Gs } = await L_.init(), { Solver: Qs, Int: d_, And: Ys, setPrintMode: Hs } = new Gs("main");
-  Hs(L_.Z3_ast_print_mode.Z3_PRINT_SMTLIB_FULL);
-  const Xe = d_.const("x"), Ke = d_.const("y"), ue = new Qs();
-  ue.add(Ys(Xe.gt(2), Ke.lt(10), Xe.add(Ke.mul(2)).eq(7)));
-  await ue.check() && (console.log(await ue.model().toString()), console.log(await ue.congruenceExplain(Xe, Ke).toString()));
+  var d_ = Gs();
+  const { Context: Qs } = await d_.init(), { Solver: Ys, Int: k_, And: Hs, setPrintMode: $s } = new Qs("main");
+  $s(d_.Z3_ast_print_mode.Z3_PRINT_SMTLIB_FULL);
+  const Xe = k_.const("x"), Ke = k_.const("y"), t_ = (p) => {
+    document.querySelector("#app").innerText += `${p}`;
+  }, ue = new Ys();
+  ue.add(Hs(Xe.gt(2), Ke.lt(10), Xe.add(Ke.mul(2)).eq(7)));
+  await ue.check() && (t_(await ue.model().toString()), t_(await ue.congruenceExplain(Xe, Ke).toString()));
 })();
