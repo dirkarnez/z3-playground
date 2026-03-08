@@ -36,9 +36,13 @@ setPrintMode(Z3_ast_print_mode.Z3_PRINT_SMTLIB_FULL);
 const x = Int.const('x');
 const y = Int.const('y');
 
+const log = (str: string) => {
+  document.querySelector<HTMLDivElement>('#app')!.innerText += `${str}`;
+};
+
 const solver = new Solver();
 solver.add(And(x.gt(2), y.lt(10), x.add(y.mul(2)).eq(7)));
 if (await solver.check()) {
-  console.log(await solver.model().toString());
-  console.log(await solver.congruenceExplain(x, y).toString());
+  log(await solver.model().toString());
+  log(await solver.congruenceExplain(x, y).toString());
 }
