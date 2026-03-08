@@ -22,6 +22,7 @@
   - [#integer-arithmetic](https://microsoft.github.io/z3guide/programming/Z3%20JavaScript%20Examples/#integer-arithmetic)
 
 ### Tutorials
+- [microsoft/z3guide: Tutorials and courses for Z3](https://github.com/microsoft/z3guide)
 - [Introduction to SMT with Z3](https://www.isec.tugraz.at/wp-content/uploads/2019/09/Introduction-to-SMT-with-Z3.pdf)
 - [Programming Z3](https://theory.stanford.edu/~nikolaj/programmingz3.html#sec-proofs)
 - [A Step-by-Step Guide to Harnessing the Power of Z3 Solver | by Mansoor Aldosari | Medium](https://aldosari.medium.com/a-step-by-step-guide-to-harnessing-the-power-of-z3-solver-a96c4aa1b619)
