@@ -9,6 +9,7 @@
   - [Window: crossOriginIsolated property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/crossOriginIsolated)
   - Using hack from [Allow setting COOP and COEP headers in Github Pages · community · Discussion #13309](https://github.com/orgs/community/discussions/13309)
     - [gzuidhof/coi-serviceworker: Cross-origin isolation (COOP and COEP) through a service worker for situations in which you can't control the headers (e.g. GH pages) · GitHub](https://github.com/gzuidhof/coi-serviceworker)
+- The vite config is based on [chimenkamp/YAPNE-Yet-Another-Petri-Net-Editor at 6c1747e462a262bdc1d23d970716aa4f06be6799](https://github.com/chimenkamp/YAPNE-Yet-Another-Petri-Net-Editor/)
 
 ### C++
 - [dirkarnez/z3-prebuilt](https://github.com/dirkarnez/z3-prebuilt)
