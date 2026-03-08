@@ -38,6 +38,7 @@ const y = Int.const('y');
 
 const log = (str: string) => {
   document.querySelector<HTMLDivElement>('#app')!.innerText += `${str}`;
+  document.querySelector<HTMLDivElement>('#app').appendChild(document.createElement("br"));
 };
 
 const solver = new Solver();
